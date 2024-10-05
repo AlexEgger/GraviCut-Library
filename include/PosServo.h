@@ -44,8 +44,8 @@ private:
     int PosB();
 
 public:
-    // Constructor: initializes the motors and their tolerance value
-    PosServo(uint16_t tolerance);
+    // Constructor: initializes the motors
+    PosServo();
 
     // Parse input commands from the master and trigger the corresponding function
     // Returns whether the action is completed (1) or still running (0)
