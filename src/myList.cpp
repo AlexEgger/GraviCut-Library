@@ -100,7 +100,7 @@ T &GenericList<T>::get(int index)
     if (index >= size || index < 0)
     {
         // Hier könnte eine Ausnahmebehandlung implementiert werden
-        throw std::out_of_range("Index out of bounds"); // Beispiel für Ausnahmebehandlung
+        // throw std::out_of_range("Index out of bounds"); // Beispiel für Ausnahmebehandlung
     }
     return array[index]; // Rückgabe des Elements
 }
@@ -119,7 +119,7 @@ void GenericList<T>::set(int index, const T &value)
     if (index >= size || index < 0)
     {
         // Hier könnte eine Ausnahmebehandlung implementiert werden
-        throw std::out_of_range("Index out of bounds"); // Beispiel für Ausnahmebehandlung
+        // throw std::out_of_range("Index out of bounds"); // Beispiel für Ausnahmebehandlung
         return;
     }
     array[index] = value; // Setzen des Wertes
