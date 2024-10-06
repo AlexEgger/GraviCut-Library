@@ -14,7 +14,7 @@ PosServo::PosServo()
     {
         motors[i].posPin = 0;
         motors[i].negPin = 0;
-        motors[i].position = 0; // Initial position for each motor
+        updatePosition(i); // Update the initial position of each motor
     }
 }
 
