@@ -7,7 +7,7 @@ PosServo::PosServo()
           Motor(PC_8, PC_9, PB_0), // Motor 1: Schieber
           Motor(PB_5, PB_6, PB_1)  // Motor 2: Anschlag
       },
-      tol(1) // Set common tolerance for all motors
+      tol(1) // Set common tolerance for all motors in 1/100 cm
 {
     // Initialize all motor pins to the off state
     for (int i = 0; i < 3; ++i)

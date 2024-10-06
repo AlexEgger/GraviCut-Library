@@ -8,6 +8,8 @@
 Wechsler::Wechsler()
     : _pwmPin(D9),                    // Hard-coded PWM pin (change this to your desired pin)
       _rotationTimePerDegree(0.0035), // Hard-coded rotation time per degree
+      _dutyCyclePWM(0.75f),           // Set the PWM duty cycle to 75% (example value)
+      
       _motorRunning(false),
       _timeCorrection(0),
       _targetTime(0),
@@ -15,8 +17,6 @@ Wechsler::Wechsler()
 {
     // Set the PWM period to 20ms for motor control (common for servo motors)
     _pwmPin.period_ms(20);
-
-    _dutyCyclePWM = 0.75f; // Set the PWM duty cycle to 75% (example value)
 
     // Ensure the motor is stopped initially by setting the PWM duty cycle to 0
     _pwmPin.write(0.0f);
