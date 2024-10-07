@@ -3,7 +3,7 @@
 // Constructor: initializes the motors and their tolerance value
 PosServo::PosServo()
     : motors{
-          Motor(Pc_5, PB_9, PA_4), // Motor 0: Schere
+          Motor(PC_5, PB_9, PA_4), // Motor 0: Schere
           Motor(PC_6, PB_8, PA_0), // Motor 1: Schieber
           Motor(PC_8, PC_9, PA_1)  // Motor 2: Anschlag
       },
