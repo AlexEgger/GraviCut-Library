@@ -6,7 +6,7 @@
  * Hard-codes the PWM pin and rotation time per degree.
  */
 Wechsler::Wechsler()
-    : _pwmPin(D9),                    // Hard-coded PWM pin (change this to your desired pin)
+    : _pwmPin(PA_1),                    // Hard-coded PWM pin (change this to your desired pin)
       _rotationTimePerDegree(0.0035), // Hard-coded rotation time per degree
       _dutyCyclePWM(0.75f),           // Set the PWM duty cycle to 75% (example value)
       
