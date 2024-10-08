@@ -3,9 +3,9 @@
 // Parameterloser Konstruktor: Initialisiert die Solenoids und Zeiten
 Magazin::Magazin()
     : _pairs{
-          SolenoidSensorPair(D7, A0), // Paar 0: Solenoid und Sensor
-          SolenoidSensorPair(D6, A1), // Paar 1: Solenoid und Sensor
-          SolenoidSensorPair(D5, A2)  // Paar 2: Solenoid und Sensor
+          SolenoidSensorPair(PA_2, PA_0), // Paar 0: Solenoid und Sensor
+          SolenoidSensorPair(PB_3, PA_1), // Paar 1: Solenoid und Sensor
+          SolenoidSensorPair(PB_4, PA_4)  // Paar 2: Solenoid und Sensor
       },
       _activateDuration(1000),   // Definierte Aktivierungsdauer (1 Sekunde)
       _deactivateDuration(1000), // Definierte Deaktivierungsdauer (1 Sekunde)
@@ -60,4 +60,16 @@ int Magazin::parseInput(int inputValue)
         return activateControl(motorIndex); // Rufe activateControl mit dem entsprechenden Index auf
     }
     return -1; // Ungültige Eingabe
+}
+
+// Testfunktion zum testen der Pinbelegung
+void Magazin::testPins()
+{
+    for (int i = 0; i < 3; i++)
+    {
+        _pairs[i].solenoidPin = 1;
+        wait(0.5);
+        _pairs[i].solenoidPin = 0;
+        wait(0.5);
+    }
 }
