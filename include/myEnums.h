@@ -20,4 +20,14 @@ enum ModuleState
     ErrorState
 };
 
+// Enumeration for response values
+enum Response
+{
+    Running = 0,
+    Completed,
+    Magazin1Empty,
+    Magazin2Empty,
+    Magazin3Empty
+};
+
 #endif // MYENUMS_H
