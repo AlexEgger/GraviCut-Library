@@ -1,6 +1,14 @@
 #ifndef MYENUMS_H
 #define MYENUMS_H
 
+// Enumeration for boards
+enum Board
+{
+    BoardFuerAlles = 8,
+    Roboter,
+    NumberOfBoards
+};
+
 // Enumeration for modules
 enum Module
 {
