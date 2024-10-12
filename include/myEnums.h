@@ -11,4 +11,11 @@ enum class Module {
     NumberOfModules
 };
 
+// Enumeration for module states
+enum class ModuleState {
+    Running = 0,
+    Completed,
+    Error
+};
+
 #endif // MYENUMS_H
