@@ -2,20 +2,22 @@
 #define MYENUMS_H
 
 // Enumeration for modules
-enum Module {
-    Magazin = 0,
-    Schieber,
-    Schere,
-    Anschlag,
-    Wechsler,
+enum Module
+{
+    MagazinModule = 0,
+    SchieberModule,
+    SchereModule,
+    AnschlagModule,
+    WechslerModule,
     NumberOfModules
 };
 
 // Enumeration for module states
-enum ModuleState {
-    Running = 0,
-    Completed,
-    Error
+enum ModuleState
+{
+    RunningState = 0,
+    CompletedState,
+    ErrorState
 };
 
 #endif // MYENUMS_H
