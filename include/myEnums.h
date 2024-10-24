@@ -6,15 +6,15 @@ enum Board
 {
     BoardFuerAlles = 8,
     Roboter,
-    NumberOfBoards
+    NumberOfLastBoard
 };
 
 // Enumeration for modules
 enum Module
 {
     MagazinModule = 0,
-    SchieberModule,
     SchereModule,
+    SchieberModule,
     AnschlagModule,
     WechslerModule,
     NumberOfModules
@@ -25,7 +25,8 @@ enum ModuleState
 {
     RunningState = 0,
     CompletedState,
-    ErrorState
+    ErrorState,
+    InvalidState
 };
 
 // Enumeration for response values
