@@ -31,7 +31,8 @@ enum Module
     SchieberModule,
     AnschlagModule,
     WechslerModule,
-    NumberOfModules
+    NumberOfModules,
+    RoboterModule
 };
 
 // Funktion, um den Enum-Wert in einen String umzuwandeln
@@ -49,6 +50,8 @@ const char *moduleToString(Module module)
         return "AnschlagModule";
     case WechslerModule:
         return "WechslerModule";
+    case RoboterModule:
+        return "RoboterModule";
     default:
         return "Invalid Module";
     }
