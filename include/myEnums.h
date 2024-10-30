@@ -32,7 +32,7 @@ enum Module
     AnschlagModule,
     WechslerModule,
     NumberOfModules,
-    RoboterModule
+    RoboterModule = NumberOfModules
 };
 
 // Funktion, um den Enum-Wert in einen String umzuwandeln
