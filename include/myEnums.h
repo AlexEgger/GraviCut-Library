@@ -9,12 +9,6 @@ enum Board
     NumberOfLastBoard
 };
 
-// Function declarations
-const char *boardToString(Board board);
-const char *moduleToString(Module module);
-const char *moduleStateToString(ModuleState moduleState);
-const char *responseToString(Response response);
-
 // Enumeration for modules
 enum Module
 {
@@ -45,5 +39,11 @@ enum Response
     Magazin2Empty,
     Magazin3Empty
 };
+
+// Function declarations
+const char *boardToString(Board board);
+const char *moduleToString(Module module);
+const char *moduleStateToString(ModuleState moduleState);
+const char *responseToString(Response response);
 
 #endif // MYENUMS_H
