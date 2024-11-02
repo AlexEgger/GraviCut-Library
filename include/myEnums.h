@@ -9,19 +9,11 @@ enum Board
     NumberOfLastBoard
 };
 
-// Funktion, um den Enum-Wert in einen String umzuwandeln
-const char *boardToString(Board board)
-{
-    switch (board)
-    {
-    case BoardFuerAlles:
-        return "BoardFuerAlles";
-    case Roboter:
-        return "Roboter";
-    default:
-        return "Invalid Board";
-    }
-}
+// Function declarations
+const char *boardToString(Board board);
+const char *moduleToString(Module module);
+const char *moduleStateToString(ModuleState moduleState);
+const char *responseToString(Response response);
 
 // Enumeration for modules
 enum Module
@@ -35,28 +27,6 @@ enum Module
     RoboterModule = NumberOfModules
 };
 
-// Funktion, um den Enum-Wert in einen String umzuwandeln
-const char *moduleToString(Module module)
-{
-    switch (module)
-    {
-    case MagazinModule:
-        return "MagazinModule";
-    case SchereModule:
-        return "SchereModule";
-    case SchieberModule:
-        return "SchieberModule";
-    case AnschlagModule:
-        return "AnschlagModule";
-    case WechslerModule:
-        return "WechslerModule";
-    case RoboterModule:
-        return "RoboterModule";
-    default:
-        return "Invalid Module";
-    }
-}
-
 // Enumeration for module states
 enum ModuleState
 {
@@ -65,22 +35,6 @@ enum ModuleState
     ErrorState,
     InvalidState
 };
-
-// Funktion, um den Enum-Wert in einen String umzuwandeln
-const char *moduleStateToString(ModuleState moduleState)
-{
-    switch (moduleState)
-    {
-    case RunningState:
-        return "RunningState";
-    case CompletedState:
-        return "CompletedState";
-    case ErrorState:
-        return "ErrorState";
-    default:
-        return "InvalidState";
-    }
-}
 
 // Enumeration for response values
 enum Response
@@ -91,25 +45,5 @@ enum Response
     Magazin2Empty,
     Magazin3Empty
 };
-
-// Funktion, um den Enum-Wert in einen String umzuwandeln
-const char *responseToString(Response response)
-{
-    switch (response)
-    {
-    case Running:
-        return "Running";
-    case Completed:
-        return "Completed";
-    case Magazin1Empty:
-        return "Magazin1Empty";
-    case Magazin2Empty:
-        return "Magazin2Empty";
-    case Magazin3Empty:
-        return "Magazin3Empty";
-    default:
-        return "Invalid Response";
-    }
-}
 
 #endif // MYENUMS_H
